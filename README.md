@@ -18,10 +18,36 @@ Chess Tracker is a Python application that uses your computer or phone camera to
 - `chess-tracker/track_game.py`: Main script for running the chess tracker
 - `pyproject.toml`, `poetry.lock`: Dependency management files
 
+## Installation
+
+1. **Install Poetry** (if you don't have it):
+   ```sh
+   curl -sSL https://install.python-poetry.org | python3 -
+   # Or see https://python-poetry.org/docs/#installation for details
+   ```
+2. **Install dependencies:**
+   ```sh
+   poetry install
+   ```
+
 ## Getting Started
-1. Install dependencies (see `pyproject.toml`)
-2. Run `python chess-tracker/track_game.py`
+1. Make sure your camera is connected and accessible.
+2. Run the main script using Poetry:
+   ```sh
+   poetry run python chess-tracker/track_game.py
+   ```
 3. Point your camera at a chessboard and start playing!
+
+## Basic Usage
+
+- **Run the tracker:**
+  ```sh
+  poetry run python chess-tracker/track_game.py
+  ```
+- To add new dependencies, use:
+  ```sh
+  poetry add <package-name>
+  ```
 
 ## TODO
 - Implement board and piece detection logic

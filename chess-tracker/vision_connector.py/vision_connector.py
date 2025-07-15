@@ -5,6 +5,7 @@
 
 import chess
 
-def transcribe_board(frame : np.ndarray) -> chess.Board:
-    # TODO: Implement board transcription
-    return None
+# 
+class VisionConnector:
+    # Initialize camera (default camera index 0)
+    cap = cv2.VideoCapture(0)
