@@ -8,11 +8,7 @@ def main():
     
     while True:
         try:
-            frame = chess_tracker.vision_connector.get_frame()
-            if frame is not None:
-                chess_tracker.process_frame(frame)
-            else:
-                print("No frame received")
+            chess_tracker.process_frame()
         except KeyboardInterrupt:
             # User pressed Ctrl+C, show the menu
             action = handle_user_input()
