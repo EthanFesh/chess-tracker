@@ -3,7 +3,7 @@ import chess
 import chess.pgn
 import numpy as np
 from typing import Optional
-from vision_connector import VisionConnector
+from .vision_connector import VisionConnector
 
 class ChessTracker:
     """

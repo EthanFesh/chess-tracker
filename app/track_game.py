@@ -1,5 +1,5 @@
 import time
-from utils.chess_tracker import ChessTracker
+from .utils.chess_tracker import ChessTracker
 
 def main():
     print("Welcome to the chess tracker, enjoy!")
